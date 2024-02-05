@@ -11,3 +11,6 @@ Execute operations on objects dragged and dropped into the SceneView.
 ```
 https://github.com/eviltwo/DroppedObjectOrderRule.git?path=src/DroppedObjectOrderRule/Assets/DroppedObjectOrderRule
 ```
+
+# How to use
+It will run automatically after installation. You can edit the operation in Project Settings.
