@@ -1,5 +1,5 @@
 # DroppedObjectOrderRule
-Execute operations on objects dragged and dropped into the SceneView.
+Execute operations on objects dragged and dropped into scene view.
 - Change sibling index to last
 - (option) Change parent to specific root object.
 
@@ -13,4 +13,4 @@ https://github.com/eviltwo/DroppedObjectOrderRule.git?path=src/DroppedObjectOrde
 ```
 
 # How to use
-It will run automatically after installation. You can edit the operation in Project Settings.
+It will run automatically after installation. You can edit operation in Project Settings.
