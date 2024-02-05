@@ -36,10 +36,22 @@ namespace DroppedObjectOrderRule
             }
 
             GetCreatedGameObjectsOnRoot(stream, _goBuffer);
-            var count = _goBuffer.Count;
-            for (int i = 0; i < count; i++)
+            var gameObjectCount = _goBuffer.Count;
+            var rules = DroppedObjectOrderRuleSettings.instance.Operations;
+            var ruleCount = rules.Count;
+            for (int i = 0; i < gameObjectCount; i++)
             {
-                ChangeSiblingIndexToLast(_goBuffer[i]);
+                for (int j = 0; j < ruleCount; j++)
+                {
+                    var rule = rules[j];
+                    var operation = OrderRuleOperationFactory.CreateOperation(rule);
+                    if (operation == null)
+                    {
+                        continue;
+                    }
+
+                    operation.Execute(_goBuffer[i]);
+                }
             }
 
             _hasLastEventType = false;

@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enable: 1
+  Operations:
+  - Operation: 1
+    StringOption: 

@@ -1,9 +1,7 @@
 {
-    "name": "DroppedObjectOrderRule",
+    "name": "DroppedObjectOrderRule.Operation",
     "rootNamespace": "",
-    "references": [
-        "GUID:0e646bc4e0d2abd4db075ee11bdea736"
-    ],
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],
