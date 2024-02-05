@@ -19,6 +19,11 @@ namespace DroppedObjectOrderRule
 
         private static void OnChangesPublished(ref ObjectChangeEventStream stream)
         {
+            if (!DroppedObjectOrderRuleSettings.instance.Enable)
+            {
+                return;
+            }
+
             if (!_hasLastEventType)
             {
                 return;
@@ -60,6 +65,11 @@ namespace DroppedObjectOrderRule
 
         private static void OnSceneGUI(SceneView sceneView)
         {
+            if (!DroppedObjectOrderRuleSettings.instance.Enable)
+            {
+                return;
+            }
+
             var e = Event.current;
             if (e == null)
             {
